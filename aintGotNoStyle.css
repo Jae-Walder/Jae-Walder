@@ -1,0 +1,308 @@
+/* START OVERALL FLEX STRUCTURE*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;	
+	background-color: #f7f4e9;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+	#main {
+		display: flex;
+		flex: 1;
+	}
+
+		#main > article {
+			flex: 1;
+		}
+
+		#main > asideL,
+		#main > asideR {
+			flex: 0 0 1px;
+			background: beige;
+		}
+
+		#main > asideL {
+			order: -1;
+		}
+
+	header, footer {
+		min-height: 20vh;
+		background-color: #0c343d;
+		color: #d0ba87;
+		text-align: center;
+	}
+
+	header, footer, article, asideL, asideR {
+		padding: 0em 0.3em 0em 0.3em;
+	}
+	.content {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 400px) {
+	#main {
+		display: flex;
+		flex: 1;
+	}
+
+		#main > article {
+			flex: 1;
+		}
+
+		#main > asideL,
+		#main > asideR {
+			flex: 0 0 8vw;
+			background: beige;
+		}
+
+		#main > asideL {
+			order: -1;
+		}
+
+	header, footer {
+		min-height: 20vh;
+		background-color: #0c343d;
+		color: #d0ba87;
+		text-align: center;
+	}
+	header, footer, article, asideL, asideR {
+		padding: 0em 0.5em 0em 0.5em;
+	}
+
+	.content {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}	
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+	#main {
+		display: flex;
+		flex: 1;
+	}
+
+		#main > article {
+			flex: 1;
+		}
+
+		#main > asideL,
+		#main > asideR {
+			flex: 0 0 13vw;
+			background: beige;
+		}
+
+		#main > asideL {
+			order: -1;
+		}
+
+	header, footer {
+		min-height: 20vh;
+		background-color: #0c343d;
+		color: #d0ba87;
+		text-align: center;
+	}
+
+
+	header, footer, article, asideL, asideR {
+		padding: 0em 1em 0em 1em;
+	}
+
+	.content {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}
+
+/* Large devices (laptops/desktops, 600px and up) */
+@media only screen and (min-width: 900px) {
+	#main {
+		display: flex;
+		flex: 1;
+	}
+
+		#main > article {
+			flex: 1;
+		}
+
+		#main > asideL,
+		#main > asideR {
+			flex: 0 0 15vw;
+			border-radius: 10px;
+			background: beige;
+		}
+
+		#main > asideL {
+			order: -1;
+		}
+
+	header, footer {
+		min-height: 20vh;
+		background-color: #0c343d;
+		color: #d0ba87;
+		text-align: center;
+	}
+
+	header, footer, article, asideL, asideR {
+		padding: 0em 1em 0em 1em;
+	}
+
+	.content {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		padding: 4em 0em 4em 0em;
+		margin: 0em 4em 0em 4em;
+	}
+}
+
+
+
+
+/* END OVERALL FLEX STRUCTURE*/
+
+/* START OVERALL CONTENT STRUCTURE*/
+article {
+	position: relative;
+}
+
+.tDividerDiv {
+	position: relative;
+	top: 0;
+	padding-bottom: 1em;
+}
+
+.bDividerDiv {
+	position: relative;
+	bottom: 0;
+	padding-top: 1em;
+}
+
+.mDividerDiv {
+	display: flex;
+	justify-content: center;
+
+}
+/* END OVERALL CONTENT STRUCTURE*/
+/* START OVERALL CONTENT STYLING*/
+
+h1, h2, h3, h4 {
+	font-family: Didot, serif;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+h1 {
+	font-size: 2.7em;
+	margin: 0.5em 0em -0.2em 0em;
+	padding: 0em;
+}
+
+h2 {
+	font-size: 2.0em;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+h3 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #363f4f;
+}
+	h4 {
+	margin: 1em 0em 0.8em 0em ;
+	padding: 0em;
+}
+
+p {
+	font-family: Trebuchet, sans-serif;
+	letter-spacing: 1.5px;
+	line-height: 1.8em;
+}
+
+
+.pb {
+	color: #363f4f;
+	font-weight: bold;
+	font-family: Georgia, serif;
+	
+}
+
+a{
+	font-size:1.2em;
+}
+	a:hover {
+	font-weight:bold;
+	}
+.fa-Style {
+	color: #363f4f;
+	padding: 0.2em;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+li{
+	display: block;
+	color: #363f4f;
+	font-family: Georgia, serif;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+}
+
+	li:hover {
+		font-weight:bold;
+	}
+
+
+
+
+
+/* START IMAGE STYLING*/
+
+.tbDivider {
+	width: 100%;
+	height: auto;
+}
+.mDivider {
+	width: 50%;
+	height: auto;
+}
+
+.commBadge{
+	width:38px;
+	height:auto;
+}
+/* END IMAGE STYLING*/
+/* END OVERALL CONTENT STYLING*/
